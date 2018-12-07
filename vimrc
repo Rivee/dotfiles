@@ -36,10 +36,6 @@ nmap <CR> o<Esc>
 
 set clipboard=unnamed
 
-set list
-set listchars=tab:>─,eol:$,trail:\ ,nbsp:¤
-set fillchars=vert:│
-
 filetype plugin indent on
 highlight ExtraWhitespace ctermbg=white
 set background=dark
