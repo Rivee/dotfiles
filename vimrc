@@ -1,6 +1,5 @@
 " Config of vim
 
-
 set number      " Affiche les numéros de ligne
 set smartindent " Indentation intelligente
 set autoindent  " Conserve l'indentation sur une nouvelle ligne
@@ -23,24 +22,23 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'romainl/vim-qf'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'wikitopian/hardmode'
-Plugin 'tomasr/molokai'
-Plugin 'szorfein/darkest-space'
-Plugin 'fugalh/desert.vim.git'
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'dylanaraps/wal'
-Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'flazz/vim-colorschemes'
 call vundle#end()
 
-map <C-n> :NERDTreeToggle<CR>
 nnoremap <F5> :tabprevious<CR>
 nnoremap <F6> :tabnext<CR>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
+
+set clipboard=unnamed
+
+set list
+set listchars=tab:>─,eol:$,trail:\ ,nbsp:¤
+set fillchars=vert:│
 
 filetype plugin indent on
 highlight ExtraWhitespace ctermbg=white
