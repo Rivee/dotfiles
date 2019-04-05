@@ -20,13 +20,20 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+
+" Theme / Colosheme
 Plugin 'vim-airline/vim-airline'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'morhetz/gruvbox'
+
+" Helpers
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'romainl/vim-qf'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
-Plugin 'NLKNguyen/papercolor-theme'
+
+" Mics
 Plugin 'wikitopian/hardmode'
-Plugin 'flazz/vim-colorschemes'
 call vundle#end()
 
 nnoremap <F5> :tabprevious<CR>
@@ -39,4 +46,4 @@ set clipboard=unnamed
 filetype plugin indent on
 highlight ExtraWhitespace ctermbg=white
 set background=dark
-colorscheme PaperColor
+colorscheme gruvbox
