@@ -1,0 +1,9 @@
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+XTerm.vt100.foreground: white
+XTerm.vt100.background: black
+XTerm.vt100.faceName: SourceCodePro-Regular:size=10
