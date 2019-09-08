@@ -5,5 +5,5 @@ XTerm.ttyModes: erase ^?
 Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
 Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
 XTerm.vt100.foreground: white
-XTerm.vt100.background: black
+XTerm.vt100.background: #282A36
 XTerm.vt100.faceName: SourceCodePro-Regular:size=10
