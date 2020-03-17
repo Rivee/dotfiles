@@ -1,22 +1,16 @@
-" Config of vim
-
-set number      " Affiche les numéros de ligne
-set smartindent " Indentation intelligente
-set autoindent  " Conserve l'indentation sur une nouvelle ligne
-set cursorline
+set number
+set smartindent
+set autoindent
+" set cursorline
 
 set encoding=utf-8
-set ruler " Affiche la position du curseur
+set ruler
 set tabstop=8
 
-" Space identation
-set shiftwidth=4
 set expandtab
-
-set textwidth=80
+set shiftwidth=4
 
 syntax on
-
 set colorcolumn=80
 set updatetime=100
 
