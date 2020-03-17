@@ -30,37 +30,25 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Theme / Colosheme
 Plugin 'vim-airline/vim-airline'
-Plugin 'morhetz/gruvbox'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'nanotech/jellybeans.vim'
+Plugin 'calincru/flex-bison-syntax'
 
 " Helpers
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'romainl/vim-qf'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'tpope/vim-vinegar'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'ziglang/zig.vim'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'tpope/vim-vinegar'
 
-" Mics
-Plugin 'wikitopian/hardmode'
 call vundle#end()
 
-nnoremap <F5> :tabprevious<CR>
-nnoremap <F6> :tabnext<CR>
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
+filetype plugin indent on
 
-set term=st-256color
-set clipboard=unnamed
 set list
 set listchars=tab:>\ ,eol:¬,trail:\ ,nbsp:¤
-
-filetype plugin indent on
-highlight ExtraWhitespace ctermbg=white
-hi CursorLine term=bold cterm=bold guibg=Grey40
-
 set background=dark
+
+set t_md=
+hi def cCustomFunc  gui=NONE
+hi def cCustomClass  gui=NONE
