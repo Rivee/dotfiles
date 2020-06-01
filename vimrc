@@ -25,10 +25,16 @@ Plugin 'VundleVim/Vundle.vim'
 " Theme / Colosheme
 Plugin 'vim-airline/vim-airline'
 Plugin 'calincru/flex-bison-syntax'
+Plugin 'CohenArthur/tiger-vim'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'zefei/simple-dark'
+Plugin 'joshdick/onedark.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " Helpers
 Plugin 'romainl/vim-qf'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'airblade/vim-gitgutter'
@@ -46,3 +52,8 @@ set background=dark
 set t_md=
 hi def cCustomFunc  gui=NONE
 hi def cCustomClass  gui=NONE
+
+set spelllang=en
+
+" Resize automatically the size of windows split
+autocmd VimResized * wincmd =
