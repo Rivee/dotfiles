@@ -1,0 +1,31 @@
+
+xmonad.hs:14:18: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+14 | xmonad $ docks $ defaultConfig
+   |                  ^^^^^^^^^^^^^
+
+xmonad.hs:16:45: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+16 |   , manageHook = manageDocks <+> manageHook defaultConfig
+   |                                             ^^^^^^^^^^^^^
+
+xmonad.hs:17:43: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+17 |   , layoutHook = avoidStruts $ layoutHook defaultConfig
+   |                                           ^^^^^^^^^^^^^
+
+xmonad.hs:21:34: warning: [-Wdeprecations]
+    In the use of ‘defaultPP’ (imported from XMonad.Hooks.DynamicLog):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad.Hooks.DynamicLog) instead."
+   |
+21 |   , logHook = dynamicLogWithPP $ defaultPP { ppOutput = hPutStrLn xmproc, ppOrder = \(ws:_:t:_) -> [ws,t] }
+   |                                  ^^^^^^^^^
