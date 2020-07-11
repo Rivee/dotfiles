@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <stropts.h>
 #include <sys/socket.h>
 #include <linux/wireless.h>
 #include <sys/stat.h>
