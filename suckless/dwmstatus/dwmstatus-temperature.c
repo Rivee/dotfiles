@@ -2,8 +2,7 @@
  * gettemperature("/sys/class/hwmon/hwmon0/device", "temp1_input");
  */
 
-char *
-gettemperature(char *base, char *sensor)
+char *gettemperature(char *base, char *sensor)
 {
 	char *co;
 
@@ -12,4 +11,3 @@ gettemperature(char *base, char *sensor)
 		return smprintf("");
 	return smprintf("%02.0f°C", atof(co) / 1000);
 }
-

@@ -13,7 +13,7 @@ char *readfile(char *base, char *file)
 	}
 	free(path);
 
-	if (fgets(line, sizeof(line)-1, fd) == NULL) {
+	if (fgets(line, sizeof(line) - 1, fd) == NULL) {
 		perror("fgets");
 		exit(1);
 	}
@@ -50,4 +50,3 @@ char *getbattery(char *base)
 
 	return smprintf("%.0f", ((float)remcap / (float)descap) * 100);
 }
-
