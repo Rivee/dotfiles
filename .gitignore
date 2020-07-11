@@ -1,2 +1,9 @@
 # Vim trash file
 tags
+
+# All dump c file
+**/*.o
+
+# Binary name for dwm
+**/dwm
+**/dwmstatus
