@@ -38,7 +38,7 @@ char *get_rssi(const char *interface)
         err(1, "Fail fopen  : %s \n", strerror(errno));
         return NULL;
     }
-    
+
     char buff[100] = {0};
     char *data;
 

@@ -5,7 +5,7 @@
 
 static Display *dpy;
 
-void setstatus(char *str) 
+void setstatus(char *str)
 {
     XStoreName(dpy, DefaultRootWindow(dpy), str);
     XSync(dpy, False);
@@ -46,7 +46,7 @@ int main()
 	}
 
     int i = 0;
-    char *essid = NULL, *ip = NULL, *bat = NULL, *load = NULL, 
+    char *essid = NULL, *ip = NULL, *bat = NULL, *load = NULL,
          *time = NULL, *disk = NULL, *rssi = NULL;
     char *st = NULL;
 
@@ -83,10 +83,10 @@ int main()
         }
 
         if (is_up(interface)) {
-            st = smprintf("%s GiB|W: (%s at %s) %s|E: down |%s|%s|%s", disk, 
+            st = smprintf("%s GiB|W: (%s at %s) %s|E: down |%s|%s|%s", disk,
                     rssi, essid, ip, bat, load, time);
         } else if (is_up(inter_local)) {
-            st = smprintf("%s GiB|W: down|E: (%s) %s|%s|%s|%s", disk, 
+            st = smprintf("%s GiB|W: down|E: (%s) %s|%s|%s|%s", disk,
                     essid, ip, bat, load, time);
         } else {
             st = smprintf("%s GiB|W: down|E: down |%s|%s|%s", disk, bat, load, 

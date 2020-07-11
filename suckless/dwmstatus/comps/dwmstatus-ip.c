@@ -15,17 +15,16 @@ static char* ip(const char* interface, unsigned short sa_family)
             char *h = calloc(NI_MAXHOST, sizeof(char));
             int s = getnameinfo(ifddr->ifa_addr, sizeof(struct sockaddr_in6), h,
                     NI_MAXHOST, NULL, 0, NI_NUMERICHOST);
-            if (!strcmp(ifddr->ifa_name, interface) && 
+            if (!strcmp(ifddr->ifa_name, interface) &&
                     (ifddr->ifa_addr->sa_family == sa_family)) {
                 freeifaddrs(ifaddr);
-                if (s != 0) { 
+                if (s != 0) {
                     err(1, "getnemeinfo : %s ", strerror(errno));
                     return NULL;
                 }
                 return h;
             }
         }
-    
     }
     freeifaddrs(ifddr);
     return NULL;

@@ -9,9 +9,9 @@ char* get_disk_free(const char *path)
         return NULL;
     }
 
-    char *res = calloc(30, sizeof(char)); 
+    char *res = calloc(30, sizeof(char));
 
-    sprintf(res, "%.1lf", 
+    sprintf(res, "%.1lf",
             (double)(stat.f_bavail * stat.f_frsize) / (1.074 * pow(10, 9)));
 
     return res;

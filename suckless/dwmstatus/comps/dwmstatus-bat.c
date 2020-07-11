@@ -15,7 +15,6 @@ struct batt_info {
     int current_charge;
     int ream_charge;
     int present_r;
-    
     int secs_ream;
     float percentage_rem;
     enum status st;
@@ -36,7 +35,7 @@ static int get_batt_info(struct batt_info *batt, char *path)
     char *val = NULL;
     char *line = NULL;
     size_t size = 0;
-    while (line = readline(file, &size)) {
+    while ((line = readline(file, &size))) {
         val = line;
         to_val(&val);
         if (BEGINS_WITH(line, "POWER_SUPPLY_ENERGY_NOW=")) {
@@ -137,7 +136,7 @@ char* get_output_batt_all()
     }
 
     int hours = 0, secs = 0, min = 0;
-    
+
     hours = b->secs_ream / 3600;
     secs = b->secs_ream - (hours * 3600);
     min = secs / 60;
@@ -154,7 +153,7 @@ char *get_state(char *battery)
 {
     char path[PATH_MAX] = {0};
     sprintf(path, "/sys/class/power_supply/%s/status", battery);
-    
+
     FILE *file = fopen(path, "r");
     if (!file) {
         err(1, "Fail fopen : %s ", strerror(errno));
@@ -208,7 +207,7 @@ char* get_perc_all()
     float perc = (perc_bat0 + perc_bat1) / 2;
 
     char *res = calloc(10, sizeof(char));
-    
+
     sprintf(res, "%.1f", perc);
 
     return res;
