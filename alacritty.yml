@@ -90,9 +90,9 @@ env:
 # Font configuration
 font:
   normal:
-    # family: TerminessTTF Nerd Font Mono
     # family: xos4 Terminus
-    # family: Droid Sans Mono
+    family: Deja Vu Sans Mono
+    # family: Gohu GohuFont
     style: Regular
 
   # Bold font face
@@ -129,8 +129,8 @@ font:
     #style: Bold Italic
 
   # Point size
-  # size: 11.5
-  size: 10
+  size: 5
+  # size: 7
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -166,37 +166,31 @@ font:
 
 # Colors (Tomorrow Night Bright)
 colors:
-    # Default colors
   primary:
-    background: '0x2d2d2d'
-    foreground: '0xd3d0c8'
+    background: '#262626'
+    foreground: '#C6C6C4'
 
-    # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x2d2d2d'
-    cursor: '0xd3d0c8'
-
-    # Normal colors
+  # Normal colors
   normal:
-    black:   '0x2d2d2d'
-    red:     '0xf2777a'
-    green:   '0x99cc99'
-    yellow:  '0xffcc66'
-    blue:    '0x6699cc'
-    magenta: '0xcc99cc'
-    cyan:    '0x66cccc'
-    white:   '0xd3d0c8'
+    black:   '#10100E'
+    red:     '#C40233'
+    green:   '#009F6B'
+    yellow:  '#FFD700'
+    blue:    '#0087BD'
+    magenta: '#CB1ED1'
+    cyan:    '#20B2AA'
+    white:   '#C6C6C4'
 
-    # Bright colors
+  # Bright colors
   bright:
-    black:   '0x747369'
-    red:     '0xf2777a'
-    green:   '0x99cc99'
-    yellow:  '0xffcc66'
-    blue:    '0x6699cc'
-    magenta: '0xcc99cc'
-    cyan:    '0x66cccc'
-    white:   '0xf2f0ec'
+    black:   '#696969'
+    red:     '#FF2400'
+    green:   '#03C03C'
+    yellow:  '#FDFF00'
+    blue:    '#007FFF'
+    magenta: '#FD28FF'
+    cyan:    '#00CCCC'
+    white:   '#FFFAFA'
 
   # Dim colors
   #
