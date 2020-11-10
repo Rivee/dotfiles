@@ -167,30 +167,33 @@ font:
 # Colors (Tomorrow Night Bright)
 colors:
   primary:
-    background: '#262626'
-    foreground: '#C6C6C4'
-
-  # Normal colors
+    background: '#fafafa'
+    foreground: '#383a42'
+  cursor:
+    text:       CellBackground
+    cursor:     '#526eff' # syntax-cursor-color
+  selection:
+    text:       CellForeground
+    background: '#e5e5e6' # syntax-selection-color
   normal:
-    black:   '#10100E'
-    red:     '#C40233'
-    green:   '#009F6B'
-    yellow:  '#FFD700'
-    blue:    '#0087BD'
-    magenta: '#CB1ED1'
-    cyan:    '#20B2AA'
-    white:   '#C6C6C4'
+    black:      '#696c77' # mono-2
+    red:        '#e45649' # red 1
+    green:      '#50a14f'
+    yellow:     '#c18401' # orange 2
+    blue:       '#4078f2'
+    magenta:    '#a626a4'
+    cyan:       '#0184bc'
+    white:      '#a0a1a7' # mono-3
 
-  # Bright colors
   bright:
-    black:   '#696969'
-    red:     '#FF2400'
-    green:   '#03C03C'
-    yellow:  '#FDFF00'
-    blue:    '#007FFF'
-    magenta: '#FD28FF'
-    cyan:    '#00CCCC'
-    white:   '#FFFAFA'
+    black:   '#212121'
+    red:     '#fb0026'
+    green:   '#5fd7af'
+    yellow:  '#c9ba04'
+    blue:    '#1492c7'
+    magenta: '#6855de'
+    cyan:    '#4fb8cc'
+    white:   '#f1f1f1'
 
   # Dim colors
   #
