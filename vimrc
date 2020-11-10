@@ -1,19 +1,15 @@
+" Custom Vim Config
 set number
 set smartindent
 set autoindent
-" set cursorline
-
 set encoding=utf-8
+
+set textwidth=79 " Limit the text to 80 chars
+
 set ruler
 set tabstop=8
-
-" set expandtab
-" set shiftwidth=4
-
 syntax on
-set colorcolumn=80
-set updatetime=100
-
+set cc=80
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -21,19 +17,16 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'joshdick/onedark.vim'
 
 " Theme / Colosheme
-Plugin 'vim-airline/vim-airline'
-Plugin 'calincru/flex-bison-syntax'
-Plugin 'CohenArthur/tiger-vim'
-Plugin 'AlxHnr/clear_colors'
 
 " Helpers
 Plugin 'romainl/vim-qf'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'rust-lang/rust.vim'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'tpope/vim-vinegar'
 
@@ -41,16 +34,21 @@ call vundle#end()
 
 filetype plugin indent on
 
+set background=dark
+colorscheme delek
+
 set list
 set listchars=tab:>\ ,eol:¬,trail:\ ,nbsp:¤
 
-set background=dark
-colorscheme clear_colors_dark
+hi Special cterm=NONE ctermfg=DarkYellow
+hi Statement cterm=Bold ctermfg=Yellow
+hi Comment cterm=NONE ctermfg=DarkCyan
+hi Type cterm=Bold ctermfg=Cyan
 
-set t_md=
-hi def cCustomFunc  gui=NONE
-hi def cCustomClass  gui=NONE
+set path+=**
+set wildmenu
 
+let g:netrw_banner=0
 
 " Resize automatically the size of windows split
 autocmd VimResized * wincmd =
